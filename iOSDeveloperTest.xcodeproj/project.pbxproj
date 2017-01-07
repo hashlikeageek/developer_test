@@ -32,6 +32,8 @@
 		C5A94CEE1E20DFD300EA2B72 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A94CED1E20DFD300EA2B72 /* QuartzCore.framework */; };
 		C5A94CF01E20DFDC00EA2B72 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A94CEF1E20DFDC00EA2B72 /* SystemConfiguration.framework */; };
 		C5A94CF21E20EBFE00EA2B72 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C5A94CF11E20EBFE00EA2B72 /* data.json */; };
+		C5A94CF41E2137D800EA2B72 /* modelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A94CF31E2137D800EA2B72 /* modelClass.swift */; };
+		C5A94CF61E214FF400EA2B72 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A94CF51E214FF400EA2B72 /* detailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		C5A94CED1E20DFD300EA2B72 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C5A94CEF1E20DFDC00EA2B72 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C5A94CF11E20EBFE00EA2B72 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		C5A94CF31E2137D800EA2B72 /* modelClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modelClass.swift; sourceTree = "<group>"; };
+		C5A94CF51E214FF400EA2B72 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				C5A94CA91E20D98600EA2B72 /* LaunchScreen.storyboard */,
 				C5A94CAC1E20D98600EA2B72 /* Info.plist */,
 				C5A94CF11E20EBFE00EA2B72 /* data.json */,
+				C5A94CF31E2137D800EA2B72 /* modelClass.swift */,
+				C5A94CF51E214FF400EA2B72 /* detailViewController.swift */,
 			);
 			path = iOSDeveloperTest;
 			sourceTree = "<group>";
@@ -344,6 +350,8 @@
 			files = (
 				C5A94CA31E20D98600EA2B72 /* ViewController.swift in Sources */,
 				C5A94CA11E20D98600EA2B72 /* AppDelegate.swift in Sources */,
+				C5A94CF41E2137D800EA2B72 /* modelClass.swift in Sources */,
+				C5A94CF61E214FF400EA2B72 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
