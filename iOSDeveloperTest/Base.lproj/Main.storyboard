@@ -14,7 +14,7 @@
         <scene sceneID="Qzu-nE-gPh">
             <objects>
                 <navigationController id="Fsb-qQ-CP6" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A3C-bi-X5y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="A3C-bi-X5y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -29,7 +29,6 @@
         <!--Test App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSDeveloperTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -77,13 +76,13 @@
                         <segue destination="Exo-4V-TEs" kind="show" identifier="detail" id="IL9-V4-mCm"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="5Y7-g3-08o">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vLH-hN-TnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="detail" id="Exo-4V-TEs" customClass="detailViewController" customModule="iOSDeveloperTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SIA-gP-C3E"/>
@@ -110,6 +109,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7W2-En-5sA"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLH-hN-TnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018" y="136"/>
         </scene>

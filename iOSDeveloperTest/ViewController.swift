@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var marker : GMSMarker!
     
     @IBAction func filterClicked(_ sender: Any) {
-        filter(input: model.sharedInstance().myArr)
+        filter(input: model.sharedInstance().myArr as NSArray)
     }
     
     var pickerData: [String] = [String]()
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         return pickerData[row]
     }
     
-    func filter (input: Array<Any>)
+    func filter (input: NSArray)
     {
         let row = picker.selectedRow(inComponent: 0)
         print(row)
@@ -81,7 +81,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 do {
                     if let jsonResult = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions(rawValue: 0)) as? NSDictionary {
                         if let jsonarray = jsonResult.value(forKey: "data") as? NSArray {
-                            parsearry(input: jsonarray as! Array<Any>)
+                            parsearry(input: jsonarray)
                             model.sharedInstance().myArr = jsonarray as [AnyObject]
                         }
                         
@@ -109,7 +109,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     
-    func parsearry(input: Array<Any>)
+    func parsearry(input: NSArray)
     {
         for (_, element) in input.enumerated() {
             if let element = element as? NSDictionary {
@@ -125,7 +125,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
     }
     
-    func exclusive_filter (input: Array<Any>)
+    func exclusive_filter (input: NSArray)
     {
         mapView.clear()
         
@@ -149,7 +149,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     }
     
-    func NormalEvents_filter (input: Array<Any>)
+    func NormalEvents_filter (input: NSArray)
     {
         mapView.clear()
         
@@ -173,7 +173,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
     }
     
-    func People_filter (input: Array<Any>)
+    func People_filter (input: NSArray)
     {
         mapView.clear()
         
